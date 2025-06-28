@@ -14,7 +14,6 @@ void loop() {
   int moisture = analogRead(A0);
 
   // Trimite valoarea citită prin portul serial către Raspberry Pi
-  // Valoarea este trimisă ca text urmat de caracterul de newline `\\n`
   Serial.println(moisture);
 
   // Așteaptă 1000 milisecunde (1 secundă) înainte de următoarea citire
