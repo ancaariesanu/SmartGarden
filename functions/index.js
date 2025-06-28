@@ -23,7 +23,7 @@ exports.sendSoilMoistureAlert = functions.database
 
     const msg = {
       to: email,
-      from: "alerts@smartgarden.com", // ✅ trebuie verificat în SendGrid
+      from: "alerts@smartgarden.com",
       subject: "🌱 Alertă: Umiditate scăzută la plantă!",
       text: `Planta ta are umiditate foarte scăzută în sol (${newValue}%). Ar trebui să o uzi cât mai curând.`,
     };
